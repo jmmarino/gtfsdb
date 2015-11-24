@@ -28,24 +28,16 @@ SRID = 4326
 
 '''Order list of class names, used for creating & populating tables'''
 SORTED_CLASS_NAMES = [
-    'RouteType',
-    'RouteFilter',
     'FeedInfo',
     'Agency',
     'Calendar',
     'CalendarDate',
     'Route',
-    'RouteDirection',
     'Stop',
-    'StopFeature',
-    'Transfer',
     'Shape',
-    'Pattern',
     'Trip',
     'StopTime',
-    'RouteStop',
-    'Frequency',
     'FareAttribute',
     'FareRule',
-    'UniversalCalendar',
+
 ]
