@@ -20,7 +20,7 @@ class StopTime(Base):
     trip_id = Column(String(255), primary_key=True, index=True, nullable=False)
     arrival_time = Column(String(9))
     departure_time = Column(String(9), index=True)
-    stop_id = Column(String(255), index=True, nullable=False)
+    stop_id = Column(String(255),nullable=False)
     stop_sequence = Column(Integer, primary_key=True, nullable=False)
     stop_headsign = Column(String(255))
     pickup_type = Column(Integer, default=0)
