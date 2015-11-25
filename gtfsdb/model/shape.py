@@ -73,7 +73,7 @@ class Shape(Base):
     shape_id = Column(String(255), primary_key=True, index=True)
     shape_pt_lat = Column(Numeric(12, 9))
     shape_pt_lon = Column(Numeric(12, 9))
-    shape_pt_sequence = Column(Integer, primary_key=True, index=True)
+    shape_pt_sequence = Column(Integer)
     shape_dist_traveled = Column(Numeric(20, 10))
 
     @classmethod
