@@ -16,7 +16,7 @@ class StopTime(Base):
     filename = 'stop_times.txt'
 
     __tablename__ = 'stop_times'
-    id_inc = Column(Integer)
+    id_inc = Column(Integer,primary_key=True, index=True, autoincrement=True)
     trip_id = Column(String(255),nullable=False)
     arrival_time = Column(String(9),primary_key=True)
     departure_time = Column(String(9))
