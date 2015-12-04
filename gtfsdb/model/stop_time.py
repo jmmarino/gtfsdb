@@ -17,7 +17,7 @@ class StopTime(Base):
 
     __tablename__ = 'stop_times'
 
-    trip_id = Column(String(255), primary_key=True,nullable=False)
+    trip_id = Column(String(255),nullable=False)
     arrival_time = Column(String(9))
     departure_time = Column(String(9))
     stop_id = Column(String(255), nullable=False)
