@@ -178,7 +178,7 @@ class RouteDirection(Base):
     __tablename__ = 'route_directions'
 
     route_id = Column(String(255), primary_key=True, index=True, nullable=False)
-    direction_id = Column(Integer, primary_key=True, index=True, nullable=False)
+    direction_id = Column(Integer, primary_key=True, nullable=False)
     direction_name = Column(String(255))
 
 
@@ -187,7 +187,7 @@ class RouteStop(Base):
 
     __tablename__ = 'route_stops'
 
-    route_id = Column(String(255), nullable=False)
+    route_id = Column(String(255), primary_key=True, nullable=False)
     direction_id = Column(Integer, nullable=False)
     stop_id = Column(String(255), nullable=False)
     order = Column(Integer, nullable=False)
