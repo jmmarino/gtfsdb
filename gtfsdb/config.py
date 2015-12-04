@@ -36,6 +36,7 @@ SORTED_CLASS_NAMES = [
     'Shape',
     'Trip',
     'StopTime',
+    'RouteStop',
     'FareAttribute',
     'FareRule',
 
